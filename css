@@ -1,0 +1,115 @@
+@font-face{
+    font-family:myFont;
+    src:url(OpenSans-Regular.ttf);
+}
+
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#clothing-acc-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+}
+a{
+    text-decoration: none;
+    font-family: myFont;
+}
+h2{
+    font-family: myFont;
+}
+
+.cloths-id{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    gap: 20px;
+}
+.cloth-card{
+    width: 100%;
+    box-sizing: border-box;  
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5)
+}
+.cloth-card:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+.Acc-id{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    gap: 20px;
+}
+.Acc-card{
+    width: 100%;
+    box-sizing: border-box;  
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5)
+}
+.Acc-card:hover{
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.model-image{
+    width: 200px;
+    height: 260px;
+}
+.model-image1{
+    width: 200px;
+    height: 260px;
+}
+.header-tag{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.header-tag1{
+    padding-top: 10%;
+    padding-left: 50px;
+}
+    
+.details-div{
+    padding-top: 5PX;
+    padding-left:10px;
+}
+.details-div1{
+    padding-top: 5PX;
+    padding-left:10px;
+}
+.card-header{
+    color: rgb(46, 45, 45);
+}
+.card-price{
+    padding-top: 5px;
+    color: rgb(19, 144, 153);
+    font-weight: 600;
+}
+.cloth-brand{
+    padding-top: 5px;
+    color: #5a5959;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+    .cloths-id{
+        grid-template-columns: repeat(2,auto);
+        width:50%;
+        padding-left: 50%;   
+    }
+    .Acc-id{
+        grid-template-columns: repeat(2,auto);
+        width:50%;
+        padding-left: 50%;
+    }
+    
+   
+}
